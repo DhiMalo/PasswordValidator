@@ -28,15 +28,15 @@ Each validation module has its own methods. The tool validates the following cat
 - [x] Not composed of a digit sequence
 - [x] Not composed of an alphabetic sequence
 - [x] No "Guessable" inputs (bad and common paswords)
-- [x] No Proper Names
-- [x] No Dictionary Words 
+- [x] No restricted proper names 
+- [x] No restricted dictionary words 
 - [x] No Keyboard Patterns (eg. qwerty or ytrewq)
 
 ### Extensibility 
 * The validation modules are organized in such a way as to permit the addition of additional violation or complexity-evaluation methods.
 
 ### Readability
-* I clearly documented the purpose, inputs, and outputs of all functions with annotations. All  functions are written plainly and without the use of external libraries (such as lodash).
+* I clearly documented the purpose, inputs, and outputs of functions with annotations. In some cases, functions are self-documenting. All functions are written plainly and do not rely on external libraries (such as lodash).
 
 ## Instructions
 
