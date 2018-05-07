@@ -19,31 +19,27 @@ const violationValidators = {
         return false;
     },
     'detectedOnlyRepeatedCharacters' : function(string){
-        // loop through string characters;
         for (let i = 0; i < string.length-1; i++) {
             const currentCharacter = string[i];
-            // loop a second time
             for (let j = 1; j < string.length; j++) {
                 const nextCharacter = string[j];
-                // if current is NOT equal to last character then return false;
                 if (currentCharacter !== nextCharacter) {
-                    return false; // Just 1 difference is sufficient.
+                    return false; 
                 } 
             }    
         }
-        return true; // NOTE: If I were to write this validator again I might add
-        // support for just three repeated characters, say.
-    }, // same as above but with digit string (no change if no type system.
+        return true; 
+    },
     'characterSequenceDetected' : function(string){
-        const characterSequence = 'abcdefghijklmnopqrituvwxyzabcdefghijklmnopqrituvwxyz'; // twice to include strings like "xyzabc"
-        if (characterSequence.indexOf(string) !== -1 ) { // if string cannot be found in sequence, indexOf returns -1.
+        const characterSequence = 'abcdefghijklmnopqrituvwxyzabcdefghijklmnopqrituvwxyz';
+        if (characterSequence.indexOf(string) !== -1 ) { 
             return true;
         }
         return false; 
     }, 
     'digitSequenceDetected' : function(string){
-        const digitSequence = '01234567890123456789098765432109'; // descent, ascent
-        if (digitSequence.indexOf(string) !== -1 ) { // if string cannot be found in sequence, indexOf returns -1.
+        const digitSequence = '01234567890123456789098765432109';
+        if (digitSequence.indexOf(string) !== -1 ) {
             return true;
         }
         return false; 

@@ -12,18 +12,17 @@ const commonPasswords = require('../collections/mostCommonPasswords2016').mostCo
 */
 const complexityValidators = {
     'absentOfKeyboardPatterns' : function(string){
-        const keyboardSequenceLR = 'qwertyuiopasdfghjklzxcvbnm'; // Left-to-Right 
-        const keyboardSequenceRL = 'mpoiuytrewqlkjhgfdsamnbvcxz'; // Right-to-Left
+        const keyboardSequenceLR = 'qwertyuiopasdfghjklzxcvbnm'; 
+        const keyboardSequenceRL = 'mpoiuytrewqlkjhgfdsamnbvcxz';
         const keyboardSequence = keyboardSequenceLR.concat(keyboardSequenceRL);
-        if (keyboardSequence.indexOf(string) !== -1 ) { // if string cannot be found in sequence, indexOf returns -1.
+        if (keyboardSequence.indexOf(string) !== -1 ) { 
             console.log(`${keyboardSequence} contains ${string}`)
             return false;
-        } // Consider expanding this category and pulling it into a seperate module
+        } 
         return true;
     },
     'absentOfCommonWords' : function(string){
-        const commonWords = commonWordsList; // source: https://www.wordfrequency.info
-        // loop through commonWords
+        const commonWords = commonWordsList; 
         for (let i = 0; i < commonWords.length; i++) {
             if (commonWords[i] === string) {
                 console.log(`\n${string} is in the list commonWords.`);
@@ -33,8 +32,7 @@ const complexityValidators = {
         return true;
     },
     'absentOfProperNames' : function(string){
-        const properNames = properNamesList; // import top names in Canada & US
-        // loop through properNames
+        const properNames = properNamesList; 
         for (let i = 0; i < properNames.length; i++) {
             if (properNames[i] === string) {
                 console.log(`\n${string} is in the list properNames.`);
