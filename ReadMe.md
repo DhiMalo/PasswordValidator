@@ -29,7 +29,7 @@ Each validation module has its own methods. The tool validates the following cat
 - [x] Not composed of an alphabetic sequence
 - [x] No "Guessable" inputs (bad and common paswords)
 - [x] No Proper Names
-- [ ] No Dictionary Words (🐞 bugfix required)
+- [x] No Dictionary Words 
 - [x] No Keyboard Patterns (eg. qwerty or ytrewq)
 
 ### Extensibility 
