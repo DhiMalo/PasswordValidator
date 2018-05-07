@@ -1,0 +1,15 @@
+{
+  "name": "vancouver_validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aheri Stanford-Asiyo (aherisan@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.19.1"
+  }
+}
