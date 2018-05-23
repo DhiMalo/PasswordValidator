@@ -1,5 +1,5 @@
 // Declare dependencies
-const commonWordsList = require('../collections/commonWordsList');
+const commonWordsList = require('../collections/commonWordsList').commonWordsList;
 const properNamesList = require('../collections/mostPopularProperNames').mostPopularProperNames;
 const worstPasswords = require('../collections/worstPasswords2017').worstPasswords2017;
 const commonPasswords = require('../collections/mostCommonPasswords2016').mostCommonPasswords2016;
